@@ -26,5 +26,5 @@ operator:
 # Additions from upstream
 createNamespace: true
 imagePullSecrets:
-  []
-#  - name: private-registry
+  
+  - name: private-registry
