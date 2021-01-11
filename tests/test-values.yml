@@ -24,7 +24,7 @@ operator:
       memory: 128Mi
 
 # Additions from upstream
-createNamespace: false
+createNamespace: true
 imagePullSecrets:
   - name: private-registry
 #  - name: private-registry
