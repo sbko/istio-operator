@@ -3,4 +3,4 @@ include:
     ref: pipeline-nonibimages
     file: '/templates/package-tests.yml'
 variables:
-  PROJECT_NAME: istio-system
+  PROJECT_NAME: istio-operator
