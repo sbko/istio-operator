@@ -4,15 +4,15 @@
 
 Pod constraints for istio operator is implemented following the kubernetes affinity documentation. Istio Operator can constraint a pod using nodeSelector or Affinity/Antti-affinity feature
 
-## nodeSelector constraint
-in the values.yaml  add a nodeSelector like 
+## nodeSelector 
+in the values.yaml  add nodeSelector like:
 ```
  nodeSelector:
     <key>: <values> 
 ```
 
 ## nodeAffinity
-in the values of yaml. add nodeaffinity like
+in the values of yaml. add nodeaffinity like:
 
 ```
 affinity:
@@ -35,7 +35,7 @@ affinity:
             - another-node-label-value
 ```
 ## podAffinity
-in the values.yaml add pod affinity/antiaffinity like
+in the values.yaml add pod affinity/antiaffinity like:
 
 ```
 affinity:
