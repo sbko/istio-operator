@@ -6,13 +6,15 @@ Pod constraints for istio operator is implemented following the kubernetes affin
 
 ## nodeSelector constraint
 in the values.yaml  add a nodeSelector like 
-
+```
  nodeSelector:
     <key>: <values> 
+```
 
 ## nodeAffinity
 in the values of yaml. add nodeaffinity like
 
+```
 affinity:
     nodeAffinity:
       requiredDuringSchedulingIgnoredDuringExecution:
@@ -31,10 +33,11 @@ affinity:
             operator: In
             values:
             - another-node-label-value
-
+```
 ## podAffinity
 in the values.yaml add pod affinity/antiaffinity like
 
+```
 affinity:
     podAffinity:
       requiredDuringSchedulingIgnoredDuringExecution:
@@ -56,6 +59,7 @@ affinity:
               values:
               - S2
           topologyKey: topology.kubernetes.io/zone
+```
 
 
 
