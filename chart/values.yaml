@@ -1,4 +1,4 @@
-hub: registry.dso.mil/platform-one/big-bang/apps/core/istio-operator/operator
+hub: registry1.dso.mil/ironbank/opensource/istio 
 tag: 1.8.4
 
 operatorNamespace: istio-operator
