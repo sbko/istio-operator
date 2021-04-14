@@ -1,4 +1,4 @@
-hub: registry1.dso.mil/ironbank/istio-1.8/operator
+hub: registry1.dso.mil/ironbank/opensource/istio-1.8/operator
 tag: 1.8.4
 
 operatorNamespace: istio-operator
