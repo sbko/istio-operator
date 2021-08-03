@@ -37,9 +37,9 @@ affinity: {}
 # Future: Toggles deployment of serviceMonitor + networkPolicy
 # Only toggles networkPolicy right now
 monitoring:
-  enabled: false
+  enabled: true
 
 networkPolicies:
-  enabled: false
+  enabled: true
   # See `kubectl cluster-info` and then resolve to IP
   controlPlaneCidr: 0.0.0.0/0
