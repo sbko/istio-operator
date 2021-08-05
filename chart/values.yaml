@@ -17,8 +17,8 @@ revision: ""
 operator:
   resources:
     limits:
-      cpu: 200m
-      memory: 256Mi
+      cpu: 50m
+      memory: 128Mi
     requests:
       cpu: 50m
       memory: 128Mi
