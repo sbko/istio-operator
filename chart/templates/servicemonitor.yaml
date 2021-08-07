@@ -1,4 +1,5 @@
 {{- if .Values.monitoring.enabled }}
+---
 apiVersion: monitoring.coreos.com/v1
 kind: ServiceMonitor
 metadata:
@@ -18,5 +19,26 @@ spec:
   - port: http-monitoring
     interval: 15s
   - port: http-policy-monitoring
+    interval: 15s
+...
+---
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: prometheus-istio-dataplane
+  namespace: {{ .Release.Namespace }}
+  labels:
+    monitoring: istio-dataplane
+    release: prometheus
+spec:
+  selector:
+    matchExpressions:
+      - {key: istio-prometheus-ignore, operator: DoesNotExist}
+  namespaceSelector:
+    any: true
+  jobLabel: envoy-stats
+  endpoints:
+  - path: /stats/prometheus
+    targetPort: http-envoy-prom
     interval: 15s
 {{- end }}
