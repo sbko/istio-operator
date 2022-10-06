@@ -33,13 +33,11 @@
       "datasourceTemplate": "docker"
     },
     {
-      "fileMatch": [
-        "^chart/values\\.yaml$"
-      ],
+      "fileMatch": ["^chart/values\\.yaml$"],
       "matchStrings": [
         "tidTag:\\s+(?<currentValue>.+)"
       ],
-      "depNameTemplate": "registry1.dso.mil/ironbank/tetrate/istio/operator",
+      "depNameTemplate": "ironbank/tetrate/istio/operator",
       "datasourceTemplate": "docker"
     },
     {
@@ -47,7 +45,7 @@
       "matchStrings": [
         "- Tetrate Istio Distro Operator:\\s+(?<currentValue>.+)"
       ],
-      "depNameTemplate": "registry1.dso.mil/ironbank/tetrate/istio/operator",
+      "depNameTemplate": "ironbank/tetrate/istio/operator",
       "datasourceTemplate": "docker"
     },
     {
